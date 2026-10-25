@@ -2,13 +2,16 @@
 
 Voice recognition models for the **zat-voice** FiveM resource (used by zat-pets). One zip per language.
 
+> [!CAUTION]
+> ## KEEP ONLY ONE LANGUAGE in `web/build/voice/`
+> **Every file under `web/build` is downloaded by every player who joins your server.** Each model is 31-289 MB, so leaving several languages there makes everyone download all of them. Put only the language you use in that folder, and delete the others.
+
 ## Install
 
 1. Download the zip of the language you use from the **Releases** page (for example `fr.zip`).
 2. Unzip it into `resources/[dev]/zat-voice/web/build/voice/`. You end up with `web/build/voice/fr/model.tar.gz`.
 3. Set `Config.Language = 'fr'` in zat-pets (`shared/config.lua`) and restart `zat-voice` and `zat-pets`.
 
-Keep only the language you use in `web/build/voice/`: every file under `web/build` is downloaded by every player.
 
 ## Models
 
